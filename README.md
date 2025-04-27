@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+Iron Enterprise - Supply Market
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Tech Stack:**  
+React.js | Spring Boot | MongoDB (NoSQL) | Selenium | OAuth2.0 | JWT
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 Project Overview
+**Iron Enterprise** is a B2B SaaS platform built for an iron material supplier, allowing businesses to place customized material cutting and profiling orders online.  
+The platform features a fully functional **user portal** and **admin dashboard**, streamlining order placement, inventory management, and showcasing the company’s CNC cutting and machinery capabilities.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Key Features
+### 🛒 User Interface
+- User registration and login (secured with OAuth2 and JWT).
+- Place orders by specifying material type, dimensions, and special profiling instructions.
+- Track the status of placed orders in real-time.
+- View company expertise in CNC profile cutting and machinery capabilities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛠️ Admin Interface
+- Manage product inventory (add, update, delete materials).
+- Oversee and update placed orders (accept, reject, schedule delivery).
+- Maintain a catalog of CNC machines and services offered.
 
-### `npm test`
+### 📦 Backend Services
+- RESTful APIs built with Spring Boot for order management and inventory control.
+- Integration with MongoDB (NoSQL database) for dynamic, scalable storage.
+- OAuth2 and JWT authentication for secure API access.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧪 Testing
+- Automated UI testing with Selenium scripts.
+- Focused on TDD (Test-Driven Development) for critical functionalities.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technologies Used
+| Frontend  | Backend  | Database | Security  | Testing  |  
+|:---------:|:--------:|:--------:|:---------:|:--------:|  
+| React.js (Hooks, Context API) | Spring Boot (REST APIs) | MongoDB (NoSQL) | OAuth 2.0 + JWT  | Selenium |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧩 Project Architecture
+```
+Frontend (React.js)
+   ⬇️
+Backend (Spring Boot APIs)
+   ⬇️
+MongoDB (NoSQL Database)
+```
+- Frontend and backend communicate through secured REST APIs.
+- Event-driven order processing and real-time dashboard updates.
+- Scalable architecture for growing catalog and orders.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛡️ Security
+- User authentication and authorization with OAuth2.0 and JWT.
+- Role-based access control (User vs Admin).
+- Secure storage and retrieval of order and inventory data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📸 Screenshots
+> (Optional: You can add a few screenshots here for the User dashboard, Admin panel, and Order placing form.)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📚 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites:
+- Node.js and npm installed
+- Java 11+ and Maven installed
+- MongoDB running locally or accessible remotely
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Setup Instructions:
 
-### Code Splitting
+**Frontend:**
+```bash
+cd frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Backend:**
+```bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+```
 
-### Analyzing the Bundle Size
+**MongoDB:**
+- Set up collections for Users, Orders, Inventory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
